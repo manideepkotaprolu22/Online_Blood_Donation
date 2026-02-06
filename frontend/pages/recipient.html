@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipient</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2 style="text-align:center;">Available Donors</h2>
+
+<div class="container">
+    <select id="filterCity">
+        <option value="">City</option>
+    </select>
+
+    <select id="filterBlood">
+        <option value="">Blood Group</option>
+    </select>
+
+    <button onclick="loadDonors()">Filter</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Blood Group</th>
+            <th>City</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody id="donorTable"></tbody>
+</table>
+
+<script src="../js/recipient.js"></script>
+</body>
+</html>
